@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0e0e">
+  <meta name="description" content="FORGE: personal workout plans, private profiles, set logging and progress shaped around you.">
+  <title>FORGE — Build your next level</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><a href="#today" class="wordmark" aria-label="Forge home">FORGE<span></span></a><div class="header-note">DISCIPLINE BUILDS MORE.</div><button class="avatar" data-view="profile" aria-label="Open profile">F</button></header>
+  <p class="sync-banner" data-sync-status role="status" aria-live="polite"></p><main id="app"></main>
+  <nav class="navigation" aria-label="Main navigation"></nav>
+  <footer style="text-align:center;padding:24px 16px 110px;font-size:12px"><a href="/privacy.html" style="color:var(--muted)">Privacy &amp; your data</a></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="confirm-dialog"><form method="dialog"><p class="eyebrow">YOUR SESSION</p><h2 id="dialog-title"></h2><p id="dialog-copy" class="muted"></p><div class="dialog-actions"><button value="cancel" class="secondary">Keep training</button><button value="confirm" class="primary">Save session</button></div></form></dialog>
+  <script src="config.js"></script>
+  <script src="vendor/supabase.js"></script>
+  <script src="personalization.js"></script>
+  <script src="accounts.js"></script>
+  <script src="profile-ui.js"></script>
+  <script src="workout-import.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
